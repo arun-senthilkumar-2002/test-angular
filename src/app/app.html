@@ -1,7 +1,7 @@
 <div>
   <p appHighlight>touch me</p>
   <h5 class="text-center" appHighlight>Parent Component</h5>
-  <p>Get data - {{valuefromchild}}</p>
+  <p>Get data 123 - {{valuefromchild}}</p>
   <input name="news" [(ngModel)]="valuepass">
   <app-child-component (sharedvalue)="receive($event)" [valuepass]="valuepass"></app-child-component>
 </div>
