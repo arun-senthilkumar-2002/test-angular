@@ -3,14 +3,19 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-
+import { ChildComponent } from '../child-component/child-component';
+import { FormsModule } from '@angular/forms';
+import { Highlight } from '../highlight';
 @NgModule({
   declarations: [
-    App
+    App,
+    ChildComponent,
+    Highlight
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
